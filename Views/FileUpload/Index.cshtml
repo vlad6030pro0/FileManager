@@ -1,0 +1,24 @@
+﻿
+<div class="wrapper">
+    <div class="header">
+        <h1>Загрузчик файлов</h1>
+        <p>Твоё будущее начинается здесь...</p>
+    </div>
+
+    <div class="main">
+        <div class="upload-section">
+            <form class="upload-form" method="post" enctype="multipart/form-data" action="/FileUpload/Upload">
+                <div class="file-dropzone">
+                    <p>Схватите и перенесите сюда файл или</p>
+                    <input type="file" class="file-input" id="fileInput" name="file"/>
+                    <label for="fileInput" class="upload-label">Выбрать файл</label>
+                </div>
+
+                <input type="text" name="password" placeholder="Пароль для файла"/>
+
+                <button type="submit" class="upload-button">Загрузить</button>
+            </form>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    </head>
+    
+    <body>
+        <div class="page">
+            <u class="menu">
+                <li><a asp-controller="FileUpload" asp-action="Index">Загрузить</a></li>
+                <li><a asp-controller="FileUpload" asp-action="Download">Скачать</a></li>
+                <li><a asp-controller="FileUpload" asp-action="DeleteFile">Удалить</a></li>
+            </u>
+            
+            <div class="content">
+                @RenderBody()
+            </div>
+
+            <div class="bottom">
+                <div class="home-button"><a asp-controller="FileUpload" asp-action="Index">Home</a></div>
+
+                <div class="footer">
+                    <p>&copy; 2024 загрузчик файлов | pronin6030@mail.ru</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

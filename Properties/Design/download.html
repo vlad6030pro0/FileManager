@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="download.css"/>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <u class="menu">
+                <li><a asp-controller="FileUpload" asp-action="Upload">Upload</a></li>
+                <li><a asp-controller="FileUpload" asp-action="Download">Download</a></li>
+            </u>
+
+            <div class="header">
+                <h1>Загрузчик файлов</h1>
+                <p>Список всех загруженных файлов</p>
+            </div>
+
+            <div class="main">
+                <div class="downloads">
+                    <div class="download-item">
+                        <h4 title="File 1">Название: File 1</h4>
+                        <p>Size: 5mb</p>
+                        <form class="download-button">
+                            <input type="text" name="fileName" value="@file.FileName" hidden>
+                            <input type="submit" id="downloadButton" hidden>
+                            <label for="downloadButton"><a href="#">Скачать</a></label>
+                        </form>
+                    </div>
+                    
+                    <div class="download-item">
+                        <h4 title="File 2">Название: File 2</h4>
+                        <p>Size: 50mb</p>
+                        <form class="download-button">
+                            <input type="text" name="fileName" value="@file.FileName" hidden>
+                            <input type="submit" id="downloadButton" hidden>
+                            <label for="downloadButton"><a href="#">Скачать</a></label>
+                        </form>
+                    </div>
+
+                    <div class="download-item">
+                        <h4 title="qqqqqqqqqqqqqqqqqqqqqqqqqqqqq">Название: qqqqqqqqqqqqqqqqqqqqqqqqqqqqq</h4>
+                        <p>Size: 50mb</p>
+                        <form class="download-button">
+                            <input type="text" name="fileName" value="@file.FileName" hidden>
+                            <input type="submit" id="downloadButton" hidden>
+                            <label for="downloadButton"><a href="#">Скачать</a></label>
+                        </form>
+                    </div>
+
+                    <div class="download-item">
+                        <h4>Название: File 222222222222222222</h4>
+                        <p>Size: 50mb</p>
+                        <form class="download-button">
+                            <input type="text" name="fileName" value="@file.FileName" hidden>
+                            <input type="submit" id="downloadButton" hidden>
+                            <label for="downloadButton"><a href="#">Скачать</a></label>
+                        </form>
+                    </div>
+
+                    <div class="download-item">
+                        <h4>Название: File 2</h4>
+                        <p>Size: 50mb</p>
+                        <form class="download-button">
+                            <input type="text" name="fileName" value="@file.FileName" hidden>
+                            <input type="submit" id="downloadButton" hidden>
+                            <label for="downloadButton"><a href="#">Скачать</a></label>
+                        </form>
+                    </div>
+
+                    <div class="download-item">
+                        <h4>Название: File 2</h4>
+                        <p>Size: 50mb</p>
+                        <form class="download-button">
+                            <input type="text" name="fileName" value="@file.FileName" hidden>
+                            <input type="submit" id="downloadButton" hidden>
+                            <label for="downloadButton"><a href="#">Скачать</a></label>
+                        </form>
+                    </div>
+
+                    <div class="download-item">
+                        <h4>Название: File 2</h4>
+                        <p>Size: 50mb</p>
+                        <form class="download-button">
+                            <input type="text" name="fileName" value="@file.FileName" hidden>
+                            <input type="submit" id="downloadButton" hidden>
+                            <label for="downloadButton"><a href="#">Скачать</a></label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+              <p>&copy; 2024 загрузчик файлов | pronin6030@mail.ru</p>
+        </div>
+    </body>
+</html>

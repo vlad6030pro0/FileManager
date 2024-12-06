@@ -1,0 +1,9 @@
+﻿@model string
+
+<h2>Введите пароль для скачивания файла:</h2>
+
+<form action="/FileUpload/DownloadFile" method="post">
+    <input type="text" name="fileName" value="@Model">
+    <input type="text" name="password" placeholder="Пароль">
+    <input type="submit">
+</form>

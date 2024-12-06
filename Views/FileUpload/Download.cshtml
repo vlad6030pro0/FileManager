@@ -1,0 +1,29 @@
+﻿
+@model IEnumerable<dynamic>
+<div class="wrapper">
+    <div class="header">
+        <h1>Загрузчик файлов</h1>
+        <p>Список всех загруженных файлов...</p>
+    </div>
+
+    <div class="main">
+        <div class="downloads">
+            @if(Model.Any())
+            {
+                foreach(var file in Model)
+                {
+                    <div class="download-item">
+                        <h4 title="@file.Name">Название: @file.Name</h4>
+                        <p>Размер: @file.Size</p>
+
+                        <form class="download-button" action="/FileUpload/DownloadFile" method="get">
+                            <input type="text" name="fileName" value="@file.Name" hidden>
+                            <input type="submit" id="button-submit" hidden>
+                            <label for="button-submit"><a>Скачать</a></label>
+                        </form>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
